@@ -6,11 +6,33 @@ class Counter extends Component {
     tags: ["tag1", "tag2", "tag3"],
   };
 
+  // constructor() {
+  //   super();
+  //   // for every event handler you do this! OR  ## we can do arrow function ##!
+  //   this.handleIncerment = this.handleIncerment.bind(this);
+  // }
+
+  // handleIncerment() {
+  //   console.log("iNCREMENT CLICKED!", this);
+  // }
+
+  // arrow function for event handling
+
+  handleIncerment = () => {
+    console.log("Increment Clicked!", this);
+  };
+
   render() {
     return (
       <div>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
-        <button className="btn btn-secondary btn-sm">Increment</button>
+        <button
+          onClick={this.handleIncerment}
+          className="btn btn-secondary btn-sm"
+        >
+          Increment
+        </button>
+
         {this.renderTags()}
       </div>
     );
