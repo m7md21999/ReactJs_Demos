@@ -18,16 +18,22 @@ class Counter extends Component {
 
   // arrow function for event handling
 
-  handleIncerment = () => {
-    console.log("Increment Clicked!", this);
+  handleIncerment = (product) => {
+    console.log(product);
+    this.setState({ count: this.state.count + 1 });
   };
+
+  // the onClick={() => this.handleIncerment(product)} won't work so i need this mehtod to get it work
+  // doHandleIncrement = () => {
+  //   this.handleIncerment({ id: 1 });
+  // };
 
   render() {
     return (
       <div>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
-          onClick={this.handleIncerment}
+          onClick={() => this.handleIncerment(product)}
           className="btn btn-secondary btn-sm"
         >
           Increment
