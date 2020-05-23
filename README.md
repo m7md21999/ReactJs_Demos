@@ -18,7 +18,7 @@ My main goal is to be proficient and being able to build apps with React library
 - Learn React JS - Codecademy Free Course 
 [Codecademy Website](https://reactjs.org/docs/getting-started.html)
 
-* I highly recommend starting with this course if it is your first time learning React, or If you don't have any idea about React. You will learn the basics and fundamentals of React and JSX. 
+**I highly recommend starting with this course if it is your first time learning React, or If you don't have any idea about React. You will learn the basics and fundamentals of React and JSX. **
 
 - Getting Started With React:
 [React website](https://reactjs.org/docs/getting-started.html)
