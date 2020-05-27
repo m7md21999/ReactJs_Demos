@@ -5,7 +5,7 @@ class ButtonCon extends Component {
   render() {
     return (
       <div>
-        <button onClick="">Click ME</button>
+        <button>Click ME</button>
       </div>
     );
   }
