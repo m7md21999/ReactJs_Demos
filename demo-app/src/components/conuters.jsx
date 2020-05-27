@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Counter from "./conuter";
+import ButtonCon from "./buttons";
 
 class Conuters extends Component {
   state = {
@@ -26,6 +27,7 @@ class Conuters extends Component {
             <h4>Counter #{counter.id}</h4>
           </Counter>
         ))}
+        <ButtonCon></ButtonCon>
       </div>
     );
   }
